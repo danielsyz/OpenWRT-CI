@@ -34,7 +34,7 @@ jobs:
       matrix:
         CONFIG: [AP8220-NQ299]
         SOURCE: [danielsyz/openwrt-6.x]
-        BRANCH: [main]
+        BRANCH: [k6.12-nss]
 
     #调用公用编译核心WRT-CORE.yml
     uses: ./.github/workflows/WRT-CORE.yml
@@ -62,4 +62,5 @@ jobs:
       #插件调整
       WRT_PACKAGE: ${{inputs.PACKAGE}}
       #仅输出配置文件
+
       WRT_TEST: ${{inputs.TEST}}
