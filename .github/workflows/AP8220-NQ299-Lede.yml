@@ -33,8 +33,8 @@ jobs:
       #max-parallel: 3
       matrix:
         CONFIG: [AP8220-NQ299]
-        SOURCE: [danielsyz/Lede]
-        BRANCH: [master]
+        SOURCE: [danielsyz/openwrt-ipq]
+        BRANCH: [24.10-nss]
 
     #调用公用编译核心WRT-CORE.yml
     uses: ./.github/workflows/WRT-CORE.yml
