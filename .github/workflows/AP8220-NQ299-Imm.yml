@@ -33,7 +33,7 @@ jobs:
       #max-parallel: 3
       matrix:
         CONFIG: [AP8220-NQ299]
-        SOURCE: [danielsyz/immortalwrt]
+        SOURCE: [danielsyz/owrt]
         BRANCH: [main]
 
     #调用公用编译核心WRT-CORE.yml
@@ -64,3 +64,4 @@ jobs:
       #仅输出配置文件
 
       WRT_TEST: ${{inputs.TEST}}
+
